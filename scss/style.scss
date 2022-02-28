@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$soft-blue : hsl(215, 51%, 70%);
+$cyan-hover : hsla(178, 100%, 50%,0.5);
+$cyan : hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background: $main-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit",sans-serif;
+}
+
+.container{
+    width: 360px;
+    margin: 0 auto;
+    .card{
+        background-color: $card-bg;
+        padding: 22px 13px;
+        border-radius: 18px;
+        margin: 0 5px;
+         .text{
+             padding: 20px 0;
+             h2{
+                 margin: 10px 0;
+                 color:$white;
+                 &:hover{
+                     color:$cyan;
+                 }
+            }
+             p{
+                 color:$soft-blue;
+             }
+             .list{
+                margin: 20px 0;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                border-bottom: 2px solid $line;
+                div{
+                    display: flex;
+                    p{
+                        margin-left: 5px;
+                    }
+                }
+             }
+         }
+    }
+}
+
+.img-div{
+    border-radius: 13px;
+    width: 324px;
+    height: 324px;
+    position: fixed;
+    background: url(../images/image-equilibrium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    #eyeIcon{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: none;
+    }
+    &:hover{
+        #eyeIcon{
+            display: block;
+        }
+        box-shadow: inset 0 0 0 1000px $cyan-hover;
+        cursor:pointer;
+    }
+}
+
+.avatar{
+    display: flex;
+    justify-content: flex-start;
+    img{
+        width: 10%;
+        height: auto;
+        border: 3px solid $white;
+        border-radius: 50%;
+    }
+    p{
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+    span{
+        &:hover{
+            color:$cyan;
+        }
+    }
+}

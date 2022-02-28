@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+.container .card {
+  background-color: #14253d;
+  padding: 22px 13px;
+  border-radius: 18px;
+  margin: 0 5px;
+}
+.container .card .text {
+  padding: 20px 0;
+}
+.container .card .text h2 {
+  margin: 10px 0;
+  color: white;
+}
+.container .card .text h2:hover {
+  color: #00fff7;
+}
+.container .card .text p {
+  color: #8bacda;
+}
+.container .card .text .list {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #2f415b;
+}
+.container .card .text .list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container .card .text .list div p {
+  margin-left: 5px;
+}
+
+.img-div {
+  border-radius: 13px;
+  width: 324px;
+  height: 324px;
+  position: fixed;
+  background: url(../images/image-equilibrium.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-div #eyeIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+.img-div:hover {
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 255, 247, 0.5);
+          box-shadow: inset 0 0 0 1000px rgba(0, 255, 247, 0.5);
+  cursor: pointer;
+}
+.img-div:hover #eyeIcon {
+  display: block;
+}
+
+.avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.avatar img {
+  width: 10%;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.avatar p {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.avatar span:hover {
+  color: #00fff7;
+}
